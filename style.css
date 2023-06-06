@@ -123,3 +123,20 @@ footer{
 .spacing-footer{
     margin-left: 60px;
 }
+.meta-logo-footer{
+    width: 135px;
+}
+
+@media (max-width:768px) {
+    .text h1 {
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: -4px;
+        font-weight: 400;
+    }
+
+    .br2 {
+        display: none;
+    }
+}
