@@ -28,12 +28,13 @@ header{
 .text h1 {
     color: transparent;
     -webkit-background-clip: text;
-    background-image: linear-gradient(82.32deg, #0099FF -9.17%, #A033FF 47.19%, #FF5280 77.23%, #FF7061 83.26%);
+    background-image: linear-gradient(89deg, #0099FF -2.17%, #A033FF 19.1509%, #FF5280 50.23%, #FF7061 33.26%);
     font-size: 4.7rem;
-    line-height: 97px;
+    line-height: 85px;
     letter-spacing: -4px;
-    font-weight: 600;
-    text-align: center;
+    font-weight: 500;
+    padding: 0 0 8px;
+    text-align: left;
 }
 
 .subheading{
@@ -116,6 +117,7 @@ footer{
     margin-top: 5rem;
     font-size: 13px;
     padding: 20px 30px;
+    text-align: center;
 }
 .meta-2023{
     font-weight: 600;
@@ -127,16 +129,40 @@ footer{
     width: 135px;
 }
 
-@media (max-width:768px) {
-    .text h1 {
-        text-align: center;
-        font-size: 3rem;
-        line-height: 3rem;
-        letter-spacing: -4px;
-        font-weight: 400;
-    }
+.spacing-footer br{
+    display: none;
+}
 
+@media (max-width:1400px) {
+    .spacing-footer br{
+        display: block;
+    }
+    .spacing-footer{
+        margin-left: 40px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    body{
+        background-color: aqua;
+        margin: 0;
+    }
     .br2 {
         display: none;
     }
+    .text h1 {
+        color: transparent;
+         background-image: linear-gradient(82.32deg, #0099FF -9.17%, #A033FF 47.19%, #FF5280 77.23%, #FF7061 83.26%);
+        font-size: 3.75rem;
+        line-height: 52px;
+        letter-spacing: -2px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .heading{
+        text-align: center;
+        transform: translateX(-50);
+    }
 }
+
